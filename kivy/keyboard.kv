@@ -1,0 +1,111 @@
+#kivy 2.1.0
+
+BoxLayout:
+    orientation: 'vertical'
+    spacing: 5
+    padding: 5
+
+    # Row 1
+    BoxLayout:
+        Button:
+            text: 'Q'
+            on_press: root.key_pressed('Q')
+        Button:
+            text: 'W'
+            on_press: root.key_pressed('W')
+        Button:
+            text: 'E'
+            on_press: root.key_pressed('E')
+        Button:
+            text: 'R'
+            on_press: root.key_pressed('R')
+        Button:
+            text: 'T'
+            on_press: root.key_pressed('T')
+        Button:
+            text: 'Y'
+            on_press: root.key_pressed('Y')
+        Button:
+            text: 'U'
+            on_press: root.key_pressed('U')
+        Button:
+            text: 'I'
+            on_press: root.key_pressed('I')
+        Button:
+            text: 'O'
+            on_press: root.key_pressed('O')
+        Button:
+            text: 'P'
+            on_press: root.key_pressed('P')
+
+    # Row 2
+    BoxLayout:
+        Button:
+            text: 'A'
+            on_press: root.key_pressed('A')
+        Button:
+            text: 'S'
+            on_press: root.key_pressed('S')
+        Button:
+            text: 'D'
+            on_press: root.key_pressed('D')
+        Button:
+            text: 'F'
+            on_press: root.key_pressed('F')
+        Button:
+            text: 'G'
+            on_press: root.key_pressed('G')
+        Button:
+            text: 'H'
+            on_press: root.key_pressed('H')
+        Button:
+            text: 'J'
+            on_press: root.key_pressed('J')
+        Button:
+            text: 'K'
+            on_press: root.key_pressed('K')
+        Button:
+            text: 'L'
+            on_press: root.key_pressed('L')
+
+    # Row 3
+    BoxLayout:
+        Button:
+            text: 'Shift'
+            on_press: root.toggle_shift()
+        Button:
+            text: 'Z'
+            on_press: root.key_pressed('Z')
+        Button:
+            text: 'X'
+            on_press: root.key_pressed('X')
+        Button:
+            text: 'C'
+            on_press: root.key_pressed('C')
+        Button:
+            text: 'V'
+            on_press: root.key_pressed('V')
+        Button:
+            text: 'B'
+            on_press: root.key_pressed('B')
+        Button:
+            text: 'N'
+            on_press: root.key_pressed('N')
+        Button:
+            text: 'M'
+            on_press: root.key_pressed('M')
+        Button:
+            text: 'Backspace'
+            on_press: root.backspace()
+
+    # Row 4
+    BoxLayout:
+        Button:
+            text: '123'
+            on_press: root.toggle_numbers()
+        Button:
+            text: 'Space'
+            on_press: root.key_pressed(' ')
+        Button:
+            text: 'Enter'
+            on_press: root.enter()
